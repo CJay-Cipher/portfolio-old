@@ -276,7 +276,10 @@ header > * {
   border-radius: 30px;
   background-color: var(--neutral-color);
   cursor: pointer;
-  box-shadow: inset -2px -2px 2px #fff, inset 2px 2px 2px #0000007e, 0 2px 5px #00000035;
+  box-shadow:
+    inset -2px -2px 2px #fff,
+    inset 2px 2px 2px #0000007e,
+    0 2px 5px #00000035;
   border: 1px solid #fff;
 }
 .navbar .switch-mode i {
@@ -291,11 +294,18 @@ header > * {
   align-items: center;
   transition: 0.3s;
   border: 0.5px solid var(--second-bg-color);
-  box-shadow: inset -2px -2px 2px #0000002d, inset 2px 2px 2px #fff, inset 0 0 2px #fff, 2px 0 5px #000000;
+  box-shadow:
+    inset -2px -2px 2px #0000002d,
+    inset 2px 2px 2px #fff,
+    inset 0 0 2px #fff,
+    2px 0 5px #000000;
 }
 .navbar .switch-mode:hover i,
 .navbar .switch-mode:active i {
-  box-shadow: inset -2px -2px 2px #0000002d, inset 2px 2px 2px #fff, 0 0 10px var(--main-font-color);
+  box-shadow:
+    inset -2px -2px 2px #0000002d,
+    inset 2px 2px 2px #fff,
+    0 0 10px var(--main-font-color);
 }
 
 .menu-icon {
@@ -372,7 +382,9 @@ header > * {
 .my-title span:nth-child(2) h3 {
   color: var(--main-font-color);
   letter-spacing: 0.2rem;
-  animation: slideUp 1s, flicker 3s linear infinite;
+  animation:
+    slideUp 1s,
+    flicker 3s linear infinite;
   opacity: 0;
   animation-delay: 3s;
 }
@@ -438,7 +450,9 @@ header > * {
 }
 .socials a:active i {
   border-color: var(--main-font-color);
-  box-shadow: inset -2px -2px 3px var(--default-light-color), inset 2px 2px 3px var(--first-font-color);
+  box-shadow:
+    inset -2px -2px 3px var(--default-light-color),
+    inset 2px 2px 3px var(--first-font-color);
 }
 .socials a:hover::before {
   filter: blur(15px);
@@ -720,7 +734,9 @@ header > * {
   color: var(--main-font-color);
   font-size: var(--h3-font-size);
   font-weight: 600;
-  animation: slideUp 1s, flicker 3s linear infinite;
+  animation:
+    slideUp 1s,
+    flicker 3s linear infinite;
   display: none;
 }
 .about-content p {
@@ -792,7 +808,9 @@ header > * {
   clip-path: polygon(40% 0%, 60% 0%, 95% 11%, 100% 16%, 100% 70%, 95% 80%, 52% 100%, 48% 100%, 5% 80%, 0% 70%, 0 16%, 5% 11%);
   /* z-index: 1; */
   background: conic-gradient(from var(--angle), transparent, var(--default-light-color), var(--third-bg-color), var(--first-font-color), transparent 90%);
-  animation: bounce var(--bounce-animation-duration) ease-in-out infinite, spinHexBorder 7s linear infinite;
+  animation:
+    bounce var(--bounce-animation-duration) ease-in-out infinite,
+    spinHexBorder 7s linear infinite;
   animation-delay: 2s;
   /* border: 2px solid red; */
 }
@@ -903,7 +921,9 @@ header > * {
   overflow: hidden;
   margin: 1%;
   box-shadow: 3px 3px 10px #0000001e;
-  transition: transform 0.3s ease-in-out, margin-inline 0.3s ease-in-out;
+  transition:
+    transform 0.3s ease-in-out,
+    margin-inline 0.3s ease-in-out;
   background: linear-gradient(var(--third-bg-color), var(--default-light-color));
 }
 .box-img {
@@ -1284,27 +1304,48 @@ footer p {
   width: 45px;
   aspect-ratio: 0.75;
   --c: no-repeat linear-gradient(#000 0 0);
-  background: var(--c) 0% 50%, var(--c) 50% 50%, var(--c) 100% 50%;
+  background:
+    var(--c) 0% 50%,
+    var(--c) 50% 50%,
+    var(--c) 100% 50%;
   animation: l7 1s infinite linear alternate;
 }
 @keyframes l7 {
   0% {
-    background-size: 20% 50%, 20% 50%, 20% 50%;
+    background-size:
+      20% 50%,
+      20% 50%,
+      20% 50%;
   }
   20% {
-    background-size: 20% 20%, 20% 50%, 20% 50%;
+    background-size:
+      20% 20%,
+      20% 50%,
+      20% 50%;
   }
   40% {
-    background-size: 20% 100%, 20% 20%, 20% 50%;
+    background-size:
+      20% 100%,
+      20% 20%,
+      20% 50%;
   }
   60% {
-    background-size: 20% 50%, 20% 100%, 20% 20%;
+    background-size:
+      20% 50%,
+      20% 100%,
+      20% 20%;
   }
   80% {
-    background-size: 20% 50%, 20% 50%, 20% 100%;
+    background-size:
+      20% 50%,
+      20% 50%,
+      20% 100%;
   }
   100% {
-    background-size: 20% 50%, 20% 50%, 20% 50%;
+    background-size:
+      20% 50%,
+      20% 50%,
+      20% 50%;
   }
 }
 
